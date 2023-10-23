@@ -32,7 +32,10 @@ CREATE TABLE IF NOT EXISTS `hubungan` (
   CONSTRAINT `FK_sejarah_negara` FOREIGN KEY (`kodeNegara`) REFERENCES `negara` (`kodeNegara`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table db_sejarah.hubungan: ~2 rows (approximately)
+INSERT INTO `hubungan` (`kodeHubungan`, `kodeNegara`, `kodeKejadian`, `deskripsiHubungan`) VALUES
+	('S0001', 'IDN', 'K0002', 'Kemerdekaan indonesia datang setelah kejadian ini selesai'),
+	('S0002', 'JPN', 'K0002', 'L JAPAN');
 
 -- Dumping structure for table db_sejarah.kejadian
 CREATE TABLE IF NOT EXISTS `kejadian` (
@@ -44,7 +47,10 @@ CREATE TABLE IF NOT EXISTS `kejadian` (
   PRIMARY KEY (`kodeKejadian`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table db_sejarah.kejadian: ~2 rows (approximately)
+INSERT INTO `kejadian` (`kodeKejadian`, `namaKejadian`, `tahunAwal`, `tahunAkhir`, `deskripsi`) VALUES
+	('K0001', 'Perang Dunia Pertama', '1914', '1918', 'Perang besar pertama yang meilbatkan jutaan rakyat'),
+	('K0002', 'Perang Dunia Ke 2', '1939', '1945', 'Perang dunia yang sangat besar');
 
 -- Dumping structure for table db_sejarah.negara
 CREATE TABLE IF NOT EXISTS `negara` (
@@ -56,7 +62,12 @@ CREATE TABLE IF NOT EXISTS `negara` (
   PRIMARY KEY (`kodeNegara`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table db_sejarah.negara: ~4 rows (approximately)
+INSERT INTO `negara` (`kodeNegara`, `namaNegara`, `tahunDitemukan`, `ditemukanSesudahMasehi`, `bendera`) VALUES
+	('IDN', 'Indonesia', '1945', 'true', 'src\\images\\IDN.png'),
+	('JPN', 'Japan', '660', 'false', 'src\\images\\JPN.png'),
+	('MYS', 'Malaysia', '1957', 'true', 'src\\images\\MYS.png'),
+	('USA', 'United States of America', '1776', 'true', 'src\\images\\USA.png');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
