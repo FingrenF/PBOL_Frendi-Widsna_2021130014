@@ -4,21 +4,42 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="349.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="pembelajaransejarah.FXMLInputNegaraController">
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pembelajaransejarah.FXMLInputNegaraController">
    <children>
-      <Label layoutX="26.0" layoutY="22.0" text="Input Data Negara">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="391.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="358.0">
+         <fill>
+            <LinearGradient endX="0.369085125366596" endY="0.49211354135338825" startX="0.053627794849383736" startY="0.4858044043700402">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.4512133300304413" blue="0.06880000233650208" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5882353186607361" green="0.29411765933036804" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="26.0" layoutY="22.0" text="Input Data Negara" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="89.0" text="Kode Negara" />
-      <Label layoutX="41.0" layoutY="135.0" text="Nama Negara" />
-      <Label layoutX="41.0" layoutY="182.0" text="Tahun Ditemukan" />
-      <Label layoutX="41.0" layoutY="223.0" prefHeight="17.0" prefWidth="94.0" text="Masa Ditemukan" />
-      <Label layoutX="41.0" layoutY="310.0" text="Bendera" />
+      <Label layoutX="41.0" layoutY="89.0" text="Kode Negara" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="135.0" text="Nama Negara" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="182.0" text="Tahun Ditemukan" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="223.0" prefHeight="17.0" prefWidth="94.0" text="Masa Ditemukan" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="310.0" text="Bendera" textFill="WHITE" />
       <TextField fx:id="txtkodenegara" layoutX="179.0" layoutY="85.0" promptText="3 Huruf" />
       <TextField fx:id="txtnamanegara" layoutX="179.0" layoutY="131.0" />
       <TextField fx:id="txttahunditemukan" layoutX="179.0" layoutY="178.0" />
@@ -26,7 +47,7 @@
       <Button fx:id="btnhapus" layoutX="179.0" layoutY="341.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="69.0" text="Hapus" />
       <Button fx:id="btnsimpan" layoutX="258.0" layoutY="341.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="69.0" text="Simpan" />
       <TextField fx:id="txtmasa" layoutX="179.0" layoutY="230.0" prefHeight="44.0" prefWidth="149.0" promptText="true/false" />
-      <Label layoutX="41.0" layoutY="240.0" text="Masehi = True" />
-      <Label layoutX="41.0" layoutY="257.0" text="Sebelum Masehi = False" />
+      <Label layoutX="41.0" layoutY="240.0" text="Masehi = True" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="257.0" text="Sebelum Masehi = False" textFill="WHITE" />
    </children>
 </AnchorPane>
