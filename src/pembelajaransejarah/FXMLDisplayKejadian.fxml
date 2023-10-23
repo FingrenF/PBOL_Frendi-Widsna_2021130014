@@ -7,10 +7,55 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pembelajaransejarah.FXMLDisplayKejadianController">
    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="58.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="687.0">
+         <fill>
+            <LinearGradient endX="0.9589905122101119" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" opacity="0.9900000095367432" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" opacity="0.9900000095367432" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.529411792755127" green="0.29411765933036804" blue="0.05882352963089943" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="338.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="687.0">
+         <fill>
+            <LinearGradient endY="0.49842270165211777" startX="0.48580444047127613" startY="0.5520504611523745">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.4512133300304413" blue="0.06880000233650208" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5882353186607361" green="0.29411765933036804" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
       <TableView fx:id="tbvkejadian" layoutX="14.0" layoutY="105.0" onMouseClicked="#tableklik" prefHeight="232.0" prefWidth="435.0">
          <columns>
             <TableColumn prefWidth="75.0" text="C1" />
@@ -24,12 +69,12 @@
       <Button fx:id="btnsebelum" layoutX="284.0" layoutY="346.0" mnemonicParsing="false" onAction="#sebelumklik" text="&lt;" />
       <Button fx:id="btnsesudah" layoutX="351.0" layoutY="347.0" mnemonicParsing="false" onAction="#sesudahklik" text="&gt;" />
       <Button fx:id="btnakhir" layoutX="414.0" layoutY="347.0" mnemonicParsing="false" onAction="#akhirklik" text="&gt;|" />
-      <Label layoutX="185.0" layoutY="24.0" prefHeight="44.0" prefWidth="356.0" text="Daftar Nama Kejadian">
+      <Label layoutX="185.0" layoutY="8.0" prefHeight="44.0" prefWidth="356.0" text="Daftar Nama Kejadian" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="36.0" />
          </font>
       </Label>
-      <TextField fx:id="searchbar" layoutX="16.0" layoutY="68.0" onKeyReleased="#cariData" prefHeight="25.0" prefWidth="435.0" promptText="Search" />
+      <TextField fx:id="searchbar" layoutX="14.0" layoutY="73.0" onKeyReleased="#cariData" prefHeight="25.0" prefWidth="435.0" promptText="Search" />
       <TextArea fx:id="txadeskripsi" layoutX="459.0" layoutY="105.0" prefHeight="232.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
