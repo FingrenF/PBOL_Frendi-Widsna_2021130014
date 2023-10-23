@@ -5,20 +5,42 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pembelajaransejarah.FXMLInputKejadianController">
    <children>
-      <Label layoutX="19.0" layoutY="23.0" text="Input Data Kejadian">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="410.0" stroke="BLACK" strokeType="INSIDE" width="358.0">
+         <fill>
+            <LinearGradient endX="0.369085125366596" endY="0.49211354135338825" startX="0.053627794849383736" startY="0.4858044043700402">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.4512133300304413" blue="0.06880000233650208" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5882353186607361" green="0.29411765933036804" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="19.0" layoutY="23.0" text="Input Data Kejadian" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="89.0" text="Kode Kejadian" />
-      <Label layoutX="41.0" layoutY="135.0" text="Nama Kejadian" />
-      <Label layoutX="41.0" layoutY="182.0" text="Tahun Awal" />
-      <Label layoutX="42.0" layoutY="221.0" prefHeight="17.0" prefWidth="76.0" text="Tahun Akhir" />
-      <Label layoutX="41.0" layoutY="260.0" text="Deskripsi" />
+      <Label layoutX="41.0" layoutY="89.0" text="Kode Kejadian" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="135.0" text="Nama Kejadian" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="182.0" text="Tahun Awal" textFill="WHITE" />
+      <Label layoutX="42.0" layoutY="221.0" prefHeight="17.0" prefWidth="76.0" text="Tahun Akhir" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="260.0" text="Deskripsi" textFill="WHITE" />
       <TextField fx:id="txtkodekejadian" layoutX="141.0" layoutY="85.0" prefHeight="25.0" prefWidth="187.0" promptText="K0000" />
       <TextField fx:id="txtnamakejadian" layoutX="141.0" layoutY="131.0" prefHeight="25.0" prefWidth="187.0" />
       <TextField fx:id="txttahunawal" layoutX="141.0" layoutY="178.0" prefHeight="25.0" prefWidth="187.0" />
