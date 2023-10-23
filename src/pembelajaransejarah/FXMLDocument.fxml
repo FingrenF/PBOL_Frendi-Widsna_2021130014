@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="594.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="pembelajaransejarah.FXMLDocumentController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="594.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Display">
+            <items>
+              <MenuItem fx:id="DisplayNegara" mnemonicParsing="false" onAction="#DisplayNegaraClick" text="Negara" />
+                  <MenuItem fx:id="DisplayKejadian" mnemonicParsing="false" onAction="#DisplayKejadianClick" text="Kejadian" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Input">
+            <items>
+              <MenuItem fx:id="InputNegara" mnemonicParsing="false" onAction="#InputNegaraClick" text="Negara" />
+                  <MenuItem fx:id="InputKejadian" mnemonicParsing="false" onAction="#InputKejadianClick" text="Kejadian" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Belajar">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Hubungan Negara dan Kejadian" />
+                  <MenuItem fx:id="BelajarHubungan" mnemonicParsing="false" text="Hubungan Negara dan Kejadian" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

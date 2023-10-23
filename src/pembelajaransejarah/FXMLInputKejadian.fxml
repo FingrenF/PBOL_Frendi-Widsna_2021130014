@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pembelajaransejarah.FXMLInputKejadianController">
+   <children>
+      <Label layoutX="19.0" layoutY="23.0" text="Input Data Kejadian">
+         <font>
+            <Font name="Bell MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="89.0" text="Kode Kejadian" />
+      <Label layoutX="41.0" layoutY="135.0" text="Nama Kejadian" />
+      <Label layoutX="41.0" layoutY="182.0" text="Tahun Awal" />
+      <Label layoutX="42.0" layoutY="221.0" prefHeight="17.0" prefWidth="76.0" text="Tahun Akhir" />
+      <Label layoutX="41.0" layoutY="260.0" text="Deskripsi" />
+      <TextField fx:id="txtkodekejadian" layoutX="141.0" layoutY="85.0" prefHeight="25.0" prefWidth="187.0" promptText="K0000" />
+      <TextField fx:id="txtnamakejadian" layoutX="141.0" layoutY="131.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txttahunawal" layoutX="141.0" layoutY="178.0" prefHeight="25.0" prefWidth="187.0" />
+      <Button fx:id="btnhapus" layoutX="141.0" layoutY="358.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="89.0" text="Hapus" />
+      <Button fx:id="btnsimpan" layoutX="238.0" layoutY="358.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="89.0" text="Simpan" />
+      <TextField fx:id="txttahunakhir" layoutX="141.0" layoutY="217.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextArea fx:id="txadeskripsi" layoutX="141.0" layoutY="260.0" prefHeight="91.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>
