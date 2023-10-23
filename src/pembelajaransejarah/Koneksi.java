@@ -16,7 +16,7 @@ class Koneksi {
     public void bukaKoneksi() {
         try {    Class.forName("com.mysql.jdbc.Driver");
             dbKoneksi = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/db_sejarah?user=root&password=KitBui03");
+            "jdbc:mysql://localhost:3306/db_sejarah?user=root&password=");
         } catch (Exception e) {
             e.printStackTrace();}
     }
