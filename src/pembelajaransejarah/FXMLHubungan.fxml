@@ -50,7 +50,7 @@
       <Button fx:id="btnakhir" layoutX="119.0" layoutY="281.0" mnemonicParsing="false" onAction="#akhirklik" text="&gt;|" />
       <Button fx:id="btnawal" layoutX="27.0" layoutY="281.0" mnemonicParsing="false" onAction="#awalklik" text="|&lt;" />
       <Button fx:id="btnhapus" layoutX="417.0" layoutY="458.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="25.0" text="-" />
-      <TextArea fx:id="txadeskripsi" layoutX="24.0" layoutY="319.0" prefHeight="132.0" prefWidth="417.0" wrapText="true" />
+      <TextArea fx:id="txadeskripsi" editable="false" layoutX="24.0" layoutY="319.0" prefHeight="132.0" prefWidth="417.0" wrapText="true" />
       <TextField fx:id="txtkodehubungan" layoutX="125.0" layoutY="59.0" onKeyReleased="#cariData" prefHeight="25.0" prefWidth="311.0" />
       <Button fx:id="btntambah" layoutX="388.0" layoutY="458.0" mnemonicParsing="false" onAction="#tambahklik" text="+" />
    </children>
