@@ -40,7 +40,7 @@
       <Label layoutX="15.0" layoutY="182.0" text="3" textFill="WHITE" />
       <Label layoutX="15.0" layoutY="255.0" text="4" textFill="WHITE" />
       <Label layoutX="15.0" layoutY="331.0" text="5" textFill="WHITE" />
-      <Label layoutX="36.0" layoutY="56.0" prefHeight="17.0" prefWidth="528.0" text="Apa hubungan antara Indonesia dan Jepang setelah berakhirnya Perang Dunia II?" textFill="WHITE" wrapText="true" />
+      <Label layoutX="36.0" layoutY="56.0" prefHeight="17.0" prefWidth="528.0" text="Apa yang terjadi pada Jepang setelah pasca perang dunia ke-2" textFill="WHITE" wrapText="true" />
       <Label layoutX="36.0" layoutY="115.0" prefHeight="17.0" prefWidth="528.0" text=" Kejadian apa yang secara signifikan memengaruhi Rusia selama Perang Dunia Pertama?" textFill="WHITE" wrapText="true" />
       <Label layoutX="36.0" layoutY="182.0" prefHeight="35.0" prefWidth="528.0" text="Negara mana yang mengalami dampak Revolusi Industri pada perkembangan industri setelah periode tersebut?" textFill="WHITE" wrapText="true" />
       <Label layoutX="36.0" layoutY="255.0" prefHeight="35.0" prefWidth="528.0" text="Kapan negara Malaysia berkolaborasi dengan tetangga untuk membangun stabilitas pasca Perang Dunia II?" textFill="WHITE" wrapText="true" />

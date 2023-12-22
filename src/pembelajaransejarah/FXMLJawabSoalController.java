@@ -44,11 +44,11 @@ public class FXMLJawabSoalController implements Initializable {
 
     private void initializeAnswerChoices() {
         // Sample data for unique answer choices
-        jawaban1.getItems().addAll("Indonesia mendukung Jepang dalam Perang Dunia II.",
-                                    "Jepang mendukung kemerdekaan Indonesia.",
-                                    "Indonesia dan Jepang menjadi musuh setelah perang.",
-                                    "Jepang tidak terlibat dalam urusan Indonesia pasca perang.",
-                                    "Indonesia dan Jepang membentuk aliansi militer.");
+        jawaban1.getItems().addAll("Jepang memerdekakan Indonesia",
+                                    "Jepang menguasai Asia",
+                                    "Jepang Mengalami Kekalahan besar",
+                                    "Jepang melakukan gencatan senjata dengan Amerika",
+                                    "Jepang menjadi pemimpin Axis");
         jawaban2.getItems().addAll("Revolusi Industri",
                                     "Perubahan ekonomi di China",
                                     "Keterlibatan Amerika dalam perang",
