@@ -43,12 +43,14 @@
             <items>
               <MenuItem fx:id="InputNegara" mnemonicParsing="false" onAction="#InputNegaraClick" text="Negara" />
                   <MenuItem fx:id="InputKejadian" mnemonicParsing="false" onAction="#InputKejadianClick" text="Kejadian" />
+                  <MenuItem fx:id="InputHubungan" mnemonicParsing="false" onAction="#InputHubunganKlik" text="Hubungan" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Belajar">
             <items>
-              <MenuItem mnemonicParsing="false" text="Hubungan Negara dan Kejadian" />
-                  <MenuItem fx:id="BelajarHubungan" mnemonicParsing="false" text="Hubungan Negara dan Kejadian" />
+                  <MenuItem fx:id="BelajarHubungan" mnemonicParsing="false" onAction="#BelajarHubunganClick" text="Hubungan Negara dan Kejadian" />
+                  <MenuItem fx:id="simulasibelajar" mnemonicParsing="false" onAction="#simulasibelajar" text="Simulasi Belajar" />
+                  <MenuItem fx:id="jawabsoal" mnemonicParsing="false" onAction="#jawabsoal" text="Kerjakan Soal" />
             </items>
           </Menu>
         </menus>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pembelajaransejarah.FXMLSimulasibelajarController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutX="-4.0" stroke="BLACK" strokeType="INSIDE" width="417.0">
+         <fill>
+            <LinearGradient endX="0.4479494666451535" endY="0.4069400630914826" startY="0.9022081808336901">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.4512133300304413" blue="0.06880000233650208" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5882353186607361" green="0.29411765933036804" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TableView fx:id="tbvnegara" layoutX="17.0" layoutY="59.0" onMouseClicked="#pilihnegara" prefHeight="99.0" prefWidth="382.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="txasejarahnegara" layoutX="17.0" layoutY="172.0" prefHeight="169.0" prefWidth="382.0" wrapText="true" />
+      <Button fx:id="btnkeluar" layoutX="334.0" layoutY="354.0" mnemonicParsing="false" onAction="#keluarklik" prefHeight="29.0" prefWidth="62.0" text="Keluar" />
+      <Label layoutX="17.0" layoutY="14.0" prefHeight="35.0" prefWidth="77.0" text="Belajar" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

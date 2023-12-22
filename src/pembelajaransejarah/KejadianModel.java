@@ -10,7 +10,7 @@ package pembelajaransejarah;
  */
 public class KejadianModel {
     private String kodeKejadian, namaKejadian, tahunAwal, tahunAkhir, deskripsi;
-
+    
     public String getKodeKejadian() {
         return kodeKejadian;
     }

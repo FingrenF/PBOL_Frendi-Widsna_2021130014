@@ -47,6 +47,6 @@
       <Button fx:id="btnhapus" layoutX="141.0" layoutY="358.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="89.0" text="Hapus" />
       <Button fx:id="btnsimpan" layoutX="238.0" layoutY="358.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="89.0" text="Simpan" />
       <TextField fx:id="txttahunakhir" layoutX="141.0" layoutY="217.0" prefHeight="25.0" prefWidth="187.0" />
-      <TextArea fx:id="txadeskripsi" layoutX="141.0" layoutY="260.0" prefHeight="91.0" prefWidth="187.0" />
+      <TextArea fx:id="txadeskripsi" layoutX="141.0" layoutY="260.0" prefHeight="91.0" prefWidth="187.0" wrapText="true" />
    </children>
 </AnchorPane>

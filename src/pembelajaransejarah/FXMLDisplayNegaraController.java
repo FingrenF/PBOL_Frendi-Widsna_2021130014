@@ -193,7 +193,7 @@ public class FXMLDisplayNegaraController implements Initializable {
          NegaraModel s = new NegaraModel();
         String key = searchbar.getText();
         if(key!=""){
-        ObservableList<NegaraModel> data=FXMLDocumentController.dtnegara.CariBrg(key,key);
+        ObservableList<NegaraModel> data=FXMLDocumentController.dtnegara.CariNegara(key,key);
         if(data!=null){            
             tbvnegara.getColumns().clear();
             tbvnegara.getItems().clear();

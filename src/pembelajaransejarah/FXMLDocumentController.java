@@ -26,6 +26,7 @@ public class FXMLDocumentController implements Initializable {
     
     public static DBNegara dtnegara = new DBNegara();
     public static DBKejadian dtkejadian = new DBKejadian();
+    public static DBHubungan dthubungan = new DBHubungan();
     
     @FXML
     private MenuItem DisplayNegara;
@@ -37,6 +38,12 @@ public class FXMLDocumentController implements Initializable {
     private MenuItem InputKejadian;
     @FXML
     private MenuItem BelajarHubungan;
+    @FXML
+    private MenuItem simulasibelajar;
+    @FXML
+    private MenuItem jawabsoal;
+    @FXML
+    private MenuItem InputHubungan;
     
     
     @Override
@@ -93,6 +100,66 @@ public class FXMLDocumentController implements Initializable {
     private void InputKejadianClick(ActionEvent event) {
          try{  
             FXMLLoader loader=new FXMLLoader(getClass().getResource("FXMLInputKejadian.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        } catch (IOException e){   e.printStackTrace();   }
+    }
+
+    @FXML
+    private void BelajarHubunganClick(ActionEvent event) {
+        try{  
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("FXMLHubungan.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        } catch (IOException e){   e.printStackTrace();   }
+    }
+
+    @FXML
+    private void simulasibelajar(ActionEvent event) {
+         try{  
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("FXMLSimulasibelajar.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        } catch (IOException e){   e.printStackTrace();   }
+    }
+
+    @FXML
+    private void jawabsoal(ActionEvent event) {
+         try{  
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("FXMLJawabSoal.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        } catch (IOException e){   e.printStackTrace();   }
+    }
+
+    @FXML
+    private void InputHubunganKlik(ActionEvent event) {
+        try{  
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("FXMLInputHubungan.fxml"));    
             Parent root = (Parent)loader.load();
             Scene scene = new Scene(root);
             Stage stg=new Stage();

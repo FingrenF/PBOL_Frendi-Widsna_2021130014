@@ -50,7 +50,7 @@ public class DBNegara {
             return null;        
         }
     }
-      public ObservableList<NegaraModel>  CariBrg(String kode, String nama) {
+      public ObservableList<NegaraModel>  CariNegara(String kode, String nama) {
         try {    
             ObservableList<NegaraModel> tableData;
             tableData = FXCollections.observableArrayList();

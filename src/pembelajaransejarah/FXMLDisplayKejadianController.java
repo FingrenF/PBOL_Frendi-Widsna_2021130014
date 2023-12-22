@@ -195,7 +195,7 @@ public class FXMLDisplayKejadianController implements Initializable {
          KejadianModel s = new KejadianModel();
         String key = searchbar.getText();
         if(key!=""){
-        ObservableList<KejadianModel> data=FXMLDocumentController.dtkejadian.CariBrg(key,key);
+        ObservableList<KejadianModel> data=FXMLDocumentController.dtkejadian.CariKejadian(key,key);
         if(data!=null){            
             tbvkejadian.getColumns().clear();
             tbvkejadian.getItems().clear();

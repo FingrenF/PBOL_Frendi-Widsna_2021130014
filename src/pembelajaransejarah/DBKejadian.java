@@ -45,7 +45,7 @@ public class DBKejadian {
             return null;        
         }
     }
-      public ObservableList<KejadianModel>  CariBrg(String kode, String nama) {
+      public ObservableList<KejadianModel>  CariKejadian(String kode, String nama) {
         try {    
             ObservableList<KejadianModel> tableData;
             tableData = FXCollections.observableArrayList();
